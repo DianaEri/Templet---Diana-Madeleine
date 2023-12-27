@@ -22,13 +22,52 @@ a :hover {
     cursor: pointer;
 }
 
+.theme-light {
+    --color-primary: #fffdfc;
+    --color-secondary: #41284a;
+    --color-third: #fffdfc;
+    --color-fourth: #feffcd;
+    --color-fifth: #f1e0ff;
+    --color-sixth: rgba(65, 40, 74, 0.9);
+    --color-seventh: rgba(65, 40, 74, 0.8);
+    --color-eigth: #e9e7e6;
+    --color-ninth: rgba(65, 40, 74, 0.7);
+    --color-tenth: white;
+}
+
+.theme-medium {
+    --color-primary: #d8dde1;
+    --color-secondary: #1f3643;
+    --color-third: #fffdfc;
+    --color-fourth: #ef977c;
+    --color-fifth: #feffcd;
+    --color-sixth: rgba(31, 54, 67, 0.9);
+    --color-seventh: rgba(31, 54, 67, 0.8);
+    --color-eigth: #ededed;
+    --color-ninth: rgba(31, 54, 67, 0.7);
+    --color-tenth: white;
+}
+
+.theme-dark {
+    --color-primary: #d8dde1;
+    --color-secondary: #1f3643;
+    --color-third: #fffdfc;
+    --color-fourth: #ef977c;
+    --color-fifth: #feffcd;
+    --color-sixth: rgba(31, 54, 67, 0.9);
+    --color-seventh: rgba(31, 54, 67, 0.8);
+    --color-eigth: #ededed;
+    --color-ninth: rgba(31, 54, 67, 0.7);
+    --color-tenth: white;
+}
+
 body {
     /* font-size: 16px; */
     font-family: "Basic Sans", sans-serif;
     font-weight: 300;
     letter-spacing: .03em;
     min-height: 100%;
-    background-color: #d8dde1; 
+    background-color: var(--color-primary); 
     /* background-color: #d2d6d9;  */
 }
 
@@ -62,7 +101,7 @@ header {
 }
 
 .light-theme {
-    background-color: white;
+    background-color: var(--color-tenth);
     border: none;
     padding: 12px;
     text-align: center;
@@ -121,15 +160,12 @@ nav.top-desktop-nav li a {
 
 /*styling av knappar på den övre navigationsmenyn*/
 nav.top-desktop-nav a button {
-    color: white;
-    letter-spacing: 0.05em;
-    
+    letter-spacing: 0.05em;  
 }
 
 /*länkar ändrar bakgrundsfärg när man hovrar*/
 nav.top-desktop-nav a button:hover {
-    background-color:#ce654b;
-    font-size: 100%;
+    font-size: 2rem;
     transition: background-color 0.3s ease;
 }
 
@@ -158,9 +194,9 @@ menyn när den sitter på toppen av "header"*/
 
 
 .Search-Small {
-    background-color: #1f3643;
-    border: 2px solid white;
-    color: white;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-tenth);
+    color: var(--color-tenth);
     padding-top: 0.55%;
     padding-bottom: 0.55%;
     padding-right: 0.7%;
@@ -266,7 +302,7 @@ nav.top-desktop-nav a button:hover {
 
 #Search-Form {
 
-    background-color: #1f3643;
+    background-color: var(--color-secondary);
 
     max-width: fit-content;
 
@@ -280,9 +316,9 @@ nav.top-desktop-nav a button:hover {
 
     padding: 1em;
 
-    border-color: #fffdfc;
+    border-color: var(--color-third);
 
-    border: 2px solid #fffdfc;
+    border: 2px solid var(--color-third);
 
     margin-right: 0%;
 
@@ -291,9 +327,9 @@ nav.top-desktop-nav a button:hover {
 }
 
 #Search-Form i {
-    color: #fffdfc;
+    color: var(--color-third);
     padding: 0;
-    background-color: #1f3643;
+    background-color: var(--color-secondary);
     border-radius: 30px;
     font-size: 25px;
 }
@@ -301,7 +337,7 @@ nav.top-desktop-nav a button:hover {
 #Search-Bar {
     border-radius: 30px;
     outline: none;
-    background-color: #1f3643;
+    background-color: var(--color-secondary);
 }
 
 #Search-Button {
@@ -312,11 +348,11 @@ nav.top-desktop-nav a button:hover {
     background: none;
     border: none;
     font-size: 12px;
-    color: #fffdfc;
+    color: var(--color-third);
 }
 
 input[type=text],input[type=text]::placeholder{
-    color:white;
+    color: var(--color-tenth);
 }
     
 /*Here <!--SearchboxENDS-->*/
@@ -325,7 +361,7 @@ input[type=text],input[type=text]::placeholder{
 /* Hover för mobil vy i menyn */
 @media screen and (max-width: 767px) {
     .nav-links:hover {
-        box-shadow: 0 -5px 0px  #1f3643 inset,
+        box-shadow: 0 -5px 0px  var(--color-secondary) inset,
         500px 0 0 rgba(255, 255, 255, 0.03) inset;
         padding: 5px 5px 5px 5px; 
     }
@@ -359,9 +395,8 @@ nav.top-desktop-nav li a {
 
 /*Hur meny knapparna ser ut*/
 nav.top-desktop-nav a button {
-    color: white;
     letter-spacing: 0.5rem;
-    background-color: #ef977c;
+    background-color: var(--color-fourth);
 }
 
 /*länkar ändrar bakgrundsfärg när man hovrar*/
@@ -386,7 +421,7 @@ header {
     width: 100%;
     display: flex;
     padding: .8em 1.5em;
-    background-color: #ef977c;
+    background-color: var(--color-fourth);
 }
 
 /*styling av den övre navigatiosmenyn */
@@ -412,7 +447,7 @@ nav.top-desktop-nav li a {
 
 /*styling av knappar på den övre navigationsmenyn*/
 nav.top-desktop-nav a button {
-    color: #1f3643;
+    color: var(--color-secondary);
     letter-spacing: 0.05em;
     padding: 0.5em;
     
@@ -421,9 +456,7 @@ nav.top-desktop-nav a button {
 /*länkar ändrar bakgrundsfärg när man hovrar*/
 nav.top-desktop-nav a button:hover {
     padding: 0.5em;
-    font-size: 100%;
-    transition: background-color 0.3s ease;
-
+    color: var(--color-tenth);
 }
 
 /*styling av language-elementen*/
@@ -454,11 +487,11 @@ div.language li a {
 /* stil för knappar i "language" listelement*/
 div.language li a button {
     border-radius: 50%;
-    color: #1f3643;
+    color: var(--color-secondary);
     padding: 0.5em;
-    border: 2px solid #1f3643;
+    border: 2px solid var(--color-secondary);
     font-weight: bold;
-    background-color: #feffcd;
+    background-color: var(--color-fifth);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.20) 0px 2px 16px 0px;
 }
 
@@ -472,14 +505,14 @@ div.language li a button:hover {
 /* start footer - jessica */
 footer {
     margin-top: auto;
-    background-color: #ef977c;
+    background-color: var(--color-fourth);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     padding: 2em 1em;
     font-size: .9em;
-    color: #1f3643;
+    color: var(--color-secondary);
     width: 100%;
 }
 
@@ -534,7 +567,7 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: #1f3643;
+    color: var(--color-secondary);
     transition: color 0.3s ease-out;
 }
 
@@ -548,7 +581,7 @@ i.fa-facebook,
 i.fa-instagram {
     font-size: 2em;
     margin: 0 .2em;
-    color: #1f3643;
+    color: var(--color-secondary);
     transition: color 0.3s ease-out;
 }
 
@@ -568,7 +601,7 @@ footer .copyright {
     padding: 0.5em 0 0 0;
     width: 100%;
     margin: 3em 0 .5em 0;
-    color: #1f3643;
+    color: var(--color-secondary);
 } 
 /*slut footer - jessica */
 
@@ -612,7 +645,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
     
     /* Stilar för länkarna i menyn */
     .hamburgerMenu li a {
-        color: #1f3643;
+        color: var(--color-secondary);
         text-decoration: none;
         display: block;
         padding: 2.5rem 1.5625rem; 
@@ -624,7 +657,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
     /* Animeringseffekt när musen "hover"" över länkarna */
     /* Skugga och bakgrundseffekt */
     .hamburgerMenu li a:hover {
-        box-shadow: 0 -5px 0px  #1f3643 inset,
+        box-shadow: 0 -5px 0px  var(--color-secondary) inset,
         500px 0 0 rgba(255, 255, 255, 0.03) inset;
         padding: 35px 25px 45px 25px;
     }
@@ -808,7 +841,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: var(--color-tenth);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -829,7 +862,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
 
 .text {
   color: #f2f2f2;
-  background-color: rgba(31, 54, 67, 0.9); 
+  background-color: var(--color-sixth); 
   font-size: 15px;
   font-weight: bold;
   padding: 30px 30px;
@@ -858,7 +891,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;t
+  color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -930,7 +963,7 @@ Sedan har jag använt space between för mellanrum
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 10px;
+    gap: 40px 10px; 
     justify-content: center;
     margin-top: 6%;
     margin-bottom: 3%;
@@ -954,7 +987,7 @@ Sedan har jag använt space between för mellanrum
     flex-wrap: wrap;
     gap: 40px 10px;
     justify-content: center;
-    background-color: #ededed;
+    background-color: var(--color-eigth);
     width: 100%;
 }
 
@@ -979,12 +1012,12 @@ Sedan har jag använt space between för mellanrum
     padding-bottom: 4%;
     font-size: 1.4em;
     font-weight: bold;
-    color: #ef977c;
+    color: var(--color-fourth);
 }
 
 .articlebody {
     font-weight: bold;
-    color: #1f3643;
+    color: var(--color-secondary);
     line-height: 1.7;
     font-size: 1em;
 }
@@ -1000,19 +1033,19 @@ Sedan har jag använt space between för mellanrum
 }
 
 .readmore {
-    border-bottom: 2px solid #1f3643;
+    border-bottom: 2px solid var(--color-secondary);
     padding-bottom: 4px;
     font-weight: bold;
-    color: #1f3643;
-    background-color: #ededed;
+    color: var(--color-secondary);
+    background-color: var(--color-eigth);
 }
 
 .share {
-    border-bottom: 2px solid #1f3643;
+    border-bottom: 2px solid var(--color-secondary);
     padding-bottom: 4px;
     font-weight: bold;
-    color: #1f3643;
-    background-color: #ededed;
+    color: var(--color-secondary);
+    background-color: var(--color-eigth);
 }
 
 .cardheader {
@@ -1020,7 +1053,7 @@ Sedan har jag använt space between för mellanrum
 }
 
 .colored {
-    background-color: rgba(31, 54, 67, 0.8);
+    background-color: var(--color-seventh);
     padding-top: 3%;
     padding-bottom: 3%;
     font-size: 2.7rem;
@@ -1028,7 +1061,7 @@ Sedan har jag använt space between för mellanrum
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--color-tenth);
     width: 100%;
     text-align: center;
 }
@@ -1039,7 +1072,7 @@ Sedan har jag använt space between för mellanrum
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--color-tenth);
     text-align: center;
     width: 90%;
 }
@@ -1047,7 +1080,7 @@ Sedan har jag använt space between för mellanrum
 .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(31, 54, 67, 0.7);
+    background-color: var(--color-ninth);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1139,19 +1172,19 @@ Sedan har jag använt space between för mellanrum
     }
 
     .stripe {
-        background-color: #ededed;
+        background-color: var(--color-eigth);
     }
 
     .readmore {
-        background-color: #ededed;
+        background-color: var(--color-eigth);
     }
 
     .share {
-        background-color: #ededed;       
+        background-color: var(--color-eigth);     
     }
 
     body {
-        background-color: #ededed;
+        background-color: var(--color-eigth);
     }
 
     .imageandcaption {
@@ -1167,7 +1200,7 @@ Sedan har jag använt space between för mellanrum
         width: 100vw;
         left: 0%;
         padding: 5% 30%;
-        background-color: rgba(31, 54, 67, 0.7);
+        background-color: var(--color-ninth);
     }
     
 }
@@ -1267,7 +1300,6 @@ Sedan har jag använt space between för mellanrum
 
     .text {
         padding: 0% 10%;
-        font-size: 0.8rem; 
     }
 
 }
