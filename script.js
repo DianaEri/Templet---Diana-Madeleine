@@ -8,15 +8,15 @@ function selectSchema(schema) {
 }
 
 document.getElementById('light-theme').addEventListener('click', () => {
-  selectSchema('theme-light');
+  selectSchema('light-theme');
 });
 
 document.getElementById('medium-theme').addEventListener('click', (e) => {
-  selectSchema('theme-medium');
+  selectSchema('medium-theme');
 });
 
 document.getElementById('dark-theme').addEventListener('click', (e) => {
-  selectSchema('theme-dark');
+  selectSchema('dark-theme');
 });
 
 let slideIndex = 1;

@@ -3,7 +3,7 @@
     --secondary-color: #000;
 }
 
-:root .theme-light {
+:root .light-theme {
     --color-primary: #fffdfc;
     --color-secondary: #41284a;
     --color-third: #fffdfc;
@@ -16,7 +16,7 @@
     --color-tenth: white;
 }
 
-:root .theme-medium {
+:root .medium-theme {
     --color-primary: #d8dde1;
     --color-secondary: #1f3643;
     --color-third: #fffdfc;
@@ -29,7 +29,7 @@
     --color-tenth: white;
 }
 
-:root .theme-dark {
+:root .dark-theme {
     --color-primary: #d8dde1;
     --color-secondary: #1f3643;
     --color-third: #fffdfc;
@@ -100,7 +100,7 @@ header {
     padding-right: 8%;
 }
 
-.light-theme {
+#light-theme {
     background-color: var(--color-tenth);
     border: none;
     padding: 12px;
@@ -112,7 +112,7 @@ header {
     border-radius: 50%;
 }
 
-.medium-theme {
+#medium-theme {
     background-color: grey;
     border: none;
     padding: 12px;
@@ -124,7 +124,7 @@ header {
     border-radius: 50%;
 }
 
-.dark-theme {
+#dark-theme {
     background-color: black;
     border: none;
     padding: 12px;
