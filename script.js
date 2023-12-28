@@ -1,3 +1,24 @@
+function selectSchema(schema) {
+  // Select button and unselect the other button
+  document.querySelectorAll('button').forEach(el => el.classList.remove('selected'));
+  document.getElementById(schema).classList.add('selected');
+  
+  // Set schema class  
+  document.getElementById('wrapper').className = schema;  
+}
+
+document.getElementById('light-theme').addEventListener('click', () => {
+  selectSchema('theme-light');
+});
+
+document.getElementById('medium-theme').addEventListener('click', (e) => {
+  selectSchema('theme-medium');
+});
+
+document.getElementById('dark-theme').addEventListener('click', (e) => {
+  selectSchema('theme-dark');
+});
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -10,28 +31,6 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
-// function to set a given theme/color-scheme
-function setTheme(themeName) {
-    localStorage.setItem('theme', themeName);
-    document.documentElement.className = themeName;
-}
-// function to toggle between light and dark theme
-function toggleTheme() {
-   if (localStorage.getItem('theme') === 'theme-dark'){
-       setTheme('theme-light');
-   } else {
-       setTheme('theme-dark');
-   }
-}
-// Immediately invoked function to set the theme on initial load
-(function () {
-   if (localStorage.getItem('theme') === 'theme-dark') {
-       setTheme('theme-dark');
-   } else {
-       setTheme('theme-light');
-   }
-})();
 
 function showSlides(n) {
   let i;

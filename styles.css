@@ -3,6 +3,45 @@
     --secondary-color: #000;
 }
 
+:root .theme-light {
+    --color-primary: #fffdfc;
+    --color-secondary: #41284a;
+    --color-third: #fffdfc;
+    --color-fourth: #feffcd;
+    --color-fifth: #f1e0ff;
+    --color-sixth: rgba(65, 40, 74, 0.9);
+    --color-seventh: rgba(65, 40, 74, 0.8);
+    --color-eigth: #e9e7e6;
+    --color-ninth: rgba(65, 40, 74, 0.7);
+    --color-tenth: white;
+}
+
+:root .theme-medium {
+    --color-primary: #d8dde1;
+    --color-secondary: #1f3643;
+    --color-third: #fffdfc;
+    --color-fourth: #ef977c;
+    --color-fifth: #feffcd;
+    --color-sixth: rgba(31, 54, 67, 0.9);
+    --color-seventh: rgba(31, 54, 67, 0.8);
+    --color-eigth: #ededed;
+    --color-ninth: rgba(31, 54, 67, 0.7);
+    --color-tenth: white;
+}
+
+:root .theme-dark {
+    --color-primary: #d8dde1;
+    --color-secondary: #1f3643;
+    --color-third: #fffdfc;
+    --color-fourth: #ef977c;
+    --color-fifth: #feffcd;
+    --color-sixth: rgba(31, 54, 67, 0.9);
+    --color-seventh: rgba(31, 54, 67, 0.8);
+    --color-eigth: #ededed;
+    --color-ninth: rgba(31, 54, 67, 0.7);
+    --color-tenth: white;
+}
+
 
 * {
     box-sizing: border-box;
@@ -20,45 +59,6 @@ html {
 
 a :hover {
     cursor: pointer;
-}
-
-.theme-light {
-    --color-primary: #fffdfc;
-    --color-secondary: #41284a;
-    --color-third: #fffdfc;
-    --color-fourth: #feffcd;
-    --color-fifth: #f1e0ff;
-    --color-sixth: rgba(65, 40, 74, 0.9);
-    --color-seventh: rgba(65, 40, 74, 0.8);
-    --color-eigth: #e9e7e6;
-    --color-ninth: rgba(65, 40, 74, 0.7);
-    --color-tenth: white;
-}
-
-.theme-medium {
-    --color-primary: #d8dde1;
-    --color-secondary: #1f3643;
-    --color-third: #fffdfc;
-    --color-fourth: #ef977c;
-    --color-fifth: #feffcd;
-    --color-sixth: rgba(31, 54, 67, 0.9);
-    --color-seventh: rgba(31, 54, 67, 0.8);
-    --color-eigth: #ededed;
-    --color-ninth: rgba(31, 54, 67, 0.7);
-    --color-tenth: white;
-}
-
-.theme-dark {
-    --color-primary: #d8dde1;
-    --color-secondary: #1f3643;
-    --color-third: #fffdfc;
-    --color-fourth: #ef977c;
-    --color-fifth: #feffcd;
-    --color-sixth: rgba(31, 54, 67, 0.9);
-    --color-seventh: rgba(31, 54, 67, 0.8);
-    --color-eigth: #ededed;
-    --color-ninth: rgba(31, 54, 67, 0.7);
-    --color-tenth: white;
 }
 
 body {
