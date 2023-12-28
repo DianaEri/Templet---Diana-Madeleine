@@ -6,12 +6,12 @@
 :root .light-theme {
     --color-primary: #fffdfc;
     --color-secondary: #41284a;
-    --color-third: #fffdfc;
-    --color-fourth: #feffcd;
+    --color-third: #D4F1F4;
+    --color-fourth: #94C973;
     --color-fifth: #f1e0ff;
     --color-sixth: rgba(65, 40, 74, 0.9);
     --color-seventh: rgba(65, 40, 74, 0.8);
-    --color-eigth: #e9e7e6;
+    --color-eigth: #F2F1F0;
     --color-ninth: rgba(65, 40, 74, 0.7);
     --color-tenth: white;
 }
@@ -19,7 +19,7 @@
 :root .medium-theme {
     --color-primary: #d8dde1;
     --color-secondary: #1f3643;
-    --color-third: #fffdfc;
+    --color-third: #E1F5C4;
     --color-fourth: #ef977c;
     --color-fifth: #feffcd;
     --color-sixth: rgba(31, 54, 67, 0.9);
@@ -30,16 +30,16 @@
 }
 
 :root .dark-theme {
-    --color-primary: #d8dde1;
-    --color-secondary: #1f3643;
-    --color-third: #fffdfc;
-    --color-fourth: #ef977c;
-    --color-fifth: #feffcd;
-    --color-sixth: rgba(31, 54, 67, 0.9);
-    --color-seventh: rgba(31, 54, 67, 0.8);
-    --color-eigth: #ededed;
-    --color-ninth: rgba(31, 54, 67, 0.7);
-    --color-tenth: white;
+    --color-primary: #1d1d1d;
+    --color-secondary: #feffcd;
+    --color-third: #ffe7f7;
+    --color-fourth: #9965ac;
+    --color-fifth: #41284a;
+    --color-sixth: rgba(254, 255, 205, 0.9);
+    --color-seventh: rgba(254, 255, 205, 0.8);
+    --color-eigth: #2b2b2b;
+    --color-ninth: rgba(254, 255, 205, 0.7);
+    --color-tenth: black;
 }
 
 
@@ -74,7 +74,7 @@ body {
 header {
     width: 100%;
     display: flex;
-    padding: .8em 1.5em;
+    /* padding: .8em 1.5em;  */
 }
 
 /*placering av logotyp*/
@@ -96,13 +96,12 @@ header {
 }
 
 .rfsllogo {
-    max-width: 13em;
-    padding-right: 8%;
+    max-width: 16em;
+    padding-right: 5%;
 }
 
 #light-theme {
-    background-color: var(--color-tenth);
-    border: none;
+    background-color: white;
     padding: 12px;
     text-align: center;
     text-decoration: none;
@@ -114,7 +113,6 @@ header {
 
 #medium-theme {
     background-color: grey;
-    border: none;
     padding: 12px;
     text-align: center;
     text-decoration: none;
@@ -125,8 +123,7 @@ header {
 }
 
 #dark-theme {
-    background-color: black;
-    border: none;
+    background-color: #2b2b2b;
     padding: 12px;
     text-align: center;
     text-decoration: none;
@@ -134,6 +131,10 @@ header {
     font-size: 1px;
     cursor: pointer;
     border-radius: 50%;
+}
+
+.logo-wrapper button.selected {
+    border: 3px solid black;
 }
 
 /*styling av den övre navigatiosmenyn */
@@ -178,29 +179,26 @@ header {
     justify-content: flex-start; 
     align-items: center;
     /* background-color:  rgba(255, 116, 72, 0.4);  */
-    padding: 1rem; 
 } 
 
 /*En transparent box så att inget ska vara ivägen för hamburger
 menyn när den sitter på toppen av "header"*/
 
-/* .transparentBox {
+.transparentBox {
     flex: 0 0 auto; 
-    width: 0rem; 
-    height: 2.5rem; 
-    background-color: #feffcd;
-     
-} */
+    width: 5rem; 
+    height: 2.5rem;
+} 
 
 
 .Search-Small {
     background-color: var(--color-secondary);
     border: 2px solid var(--color-tenth);
     color: var(--color-tenth);
-    padding-top: 0.55%;
-    padding-bottom: 0.55%;
-    padding-right: 0.7%;
-    padding-left: 0.7%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 7px;
+    padding-left: 7px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -249,6 +247,46 @@ div.language li a {
     padding-right: 1em;
 }
 
+/*styling av language-elementen*/
+div.language {
+    display: flex;
+    text-align: right;
+    margin-left: 0;
+    padding-left: 3%;
+}
+
+
+div.language ul {
+    display: flex;
+    list-style-type: none;
+}
+
+
+div.language li {
+    margin: 0 0.2em;
+}
+
+
+div.language li a {
+    text-decoration: none;
+
+}
+
+/* stil för knappar i "language" listelement*/
+div.language li a button {
+    border-radius: 50%;
+    color: var(--color-secondary);
+    padding: 15%;
+    border: 2px solid var(--color-secondary);
+    font-weight: bold;
+    background-color: var(--color-fifth);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.20) 0px 2px 16px 0px;
+}
+
+/* knapparna för språk blir större när man hovrar */
+div.language li a button:hover {
+    padding: 0.8em;
+}
 
 /* En bit av codepens kod användes som inspiration för att göra menyn till "Bli medlem", 
 "Ge en gåva" "Begreppsordlista". Koden anpassades och justerades för att passa webbplatsens
@@ -269,8 +307,6 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     display: inline;
     float: right;
     font-size: 0.9rem;
-    padding-bottom: 1rem;
-    width: 30%;
 }
 
 /*Ta bort punklista */
@@ -316,9 +352,9 @@ nav.top-desktop-nav a button:hover {
 
     padding: 1em;
 
-    border-color: var(--color-third);
+    border-color: var(--color-tenth);
 
-    border: 2px solid var(--color-third);
+    border: 2px solid var(--color-tenth);
 
     margin-right: 0%;
 
@@ -327,7 +363,7 @@ nav.top-desktop-nav a button:hover {
 }
 
 #Search-Form i {
-    color: var(--color-third);
+    color: var(--color-tenth);
     padding: 0;
     background-color: var(--color-secondary);
     border-radius: 30px;
@@ -348,7 +384,7 @@ nav.top-desktop-nav a button:hover {
     background: none;
     border: none;
     font-size: 12px;
-    color: var(--color-third);
+    color: var(--color-tenth);
 }
 
 input[type=text],input[type=text]::placeholder{
@@ -411,7 +447,8 @@ nav.top-desktop-nav a button:hover {
     position: -webkit-sticky; 
     position: sticky;
     top: 0;
-    z-index: 6000; /
+    z-index: 6000; 
+    width: 100%;
 }
 
 /*HEADER END*/
@@ -420,7 +457,7 @@ nav.top-desktop-nav a button:hover {
 header {
     width: 100%;
     display: flex;
-    padding: .8em 1.5em;
+
     background-color: var(--color-fourth);
 }
 
@@ -459,47 +496,6 @@ nav.top-desktop-nav a button:hover {
     color: var(--color-tenth);
 }
 
-/*styling av language-elementen*/
-div.language {
-    display: flex;
-    text-align: right;
-    margin-left: 0;
-    padding-left: 3%;
-}
-
-
-div.language ul {
-    display: flex;
-    list-style-type: none;
-}
-
-
-div.language li {
-    margin: 0 0.2em;
-}
-
-
-div.language li a {
-    text-decoration: none;
-
-}
-
-/* stil för knappar i "language" listelement*/
-div.language li a button {
-    border-radius: 50%;
-    color: var(--color-secondary);
-    padding: 0.5em;
-    border: 2px solid var(--color-secondary);
-    font-weight: bold;
-    background-color: var(--color-fifth);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.20) 0px 2px 16px 0px;
-}
-
-/* knapparna för språk blir större när man hovrar */
-div.language li a button:hover {
-    padding: 0.8em;
-}
-
 /* slut top-nav  - my, josephine, louise*/
 
 /* start footer - jessica */
@@ -514,6 +510,7 @@ footer {
     font-size: .9em;
     color: var(--color-secondary);
     width: 100%;
+    font-weight: bold;
 }
 
 footer .footer-nav {
@@ -527,8 +524,9 @@ footer .footer-nav {
 
 
 footer .footer-nav h1 {
+    color: var(--color-secondary);
     font-size: 2.5em;
-    text-shadow: 0 1px 3px #000;
+    text-shadow: 0 1px 2px #000;
 }
 
 footer .footer-nav p {
@@ -598,9 +596,9 @@ i.fa-instagram:hover {
 footer .copyright {
     display: block;
     text-align: center;
-    padding: 0.5em 0 0 0;
+    padding: 0.2em 0 0 0;
     width: 100%;
-    margin: 3em 0 .5em 0;
+    margin: 2em 0 .5em 0;
     color: var(--color-secondary);
 } 
 /*slut footer - jessica */
@@ -811,7 +809,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
 .mySlides {
   display: none;
   --s: 100px; /* control the size */
-  --c1: #E1F5C4;
+  --c1: var(--color-third);
   --c2: #b2b2b2;
   
   --_g:#0000, #0004 5%,
@@ -824,6 +822,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
     radial-gradient(100% 50% at 100% 100%,var(--_g));
   background-size: var(--s) calc(2*var(--s));
   height: min-content;
+  background-color: #d8dde1;
 }
 
 .imageandcaption {
@@ -857,11 +856,11 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(78, 77, 77, 0.8);
 }
 
 .text {
-  color: #f2f2f2;
+  color: var(--color-tenth);
   background-color: var(--color-sixth); 
   font-size: 15px;
   font-weight: bold;
@@ -891,11 +890,12 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
+  color: var(--color-tenth);
+  font-size: 16px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  font-weight: bold;
 }
 
 /* The dots/bullets/indicators */
@@ -996,6 +996,7 @@ Sedan har jag använt space between för mellanrum
     flex-direction: column;
     max-width: 23.7%;
     gap: 0.3rem 0rem;
+    font-weight: bold;
 }
 
 .double img {
@@ -1255,7 +1256,6 @@ Sedan har jag använt space between för mellanrum
     .text {
         padding: 1% 10%;
     }
-
 }
 
 @media (max-width: 480px) {
