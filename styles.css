@@ -1236,25 +1236,25 @@ Sedan har jag använt space between för mellanrum
         max-width: 6em;
     }
 
-    #enButton {
-    display: none;
-    }
-
     .transparentBox {
         width: 3rem; 
     } 
 
     #light-theme {
-        padding: 8px;
+        padding: 9px;
     }
     
     #medium-theme {
-        padding: 8px;
+        padding: 9px;
     }
     
     #dark-theme {
-        padding: 8px;
+        padding: 9px;
     }
+
+    #enButton {
+        display: none;
+        }
 }
 
 @media (max-width: 320px) {
