@@ -1224,7 +1224,17 @@ Sedan har jag använt space between för mellanrum
         padding-bottom: 1%;
     }
 
+    .Search-Small {
+        display: none;
+    }
 
+    .Search-Small {
+        display: none;
+    }
+    
+    .language {
+        display: none;
+    }
 }
 
 @media (max-width: 320px) {
