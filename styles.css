@@ -74,7 +74,10 @@ body {
 header {
     width: 100%;
     display: flex;
-    /* padding: .8em 1.5em;  */
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center;
+    background-color: var(--color-fourth);
 }
 
 /*Gör menyn sticky så att den följer med när man scrollar. W3Schools guide: https://www.w3schools.com/howto/howto_css_sticky_element.asp*/
@@ -82,7 +85,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 6000; 
+    z-index: 6000;
 }
 
 /*placering av logotyp*/
@@ -197,14 +200,6 @@ nav.top-desktop-nav a button:hover {
 }
 
 /*HEADER START*/
-
-/*Stil för header*/
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start; 
-    align-items: center;
-} 
 
 /*En transparent box så att inget ska vara ivägen för hamburger
 menyn när den sitter på toppen av "header"*/
@@ -412,14 +407,6 @@ input[type=text],input[type=text]::placeholder{
 }
 
 /*HEADER END*/
-
-
-header {
-    width: 100%;
-    display: flex;
-
-    background-color: var(--color-fourth);
-}
 
 /* slut top-nav  - my, josephine, louise*/
 
@@ -726,7 +713,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
 /* Slideshow container */
 .slideshow-container {
   max-width: 100vw;
-  position: relative; 
+  position: relative;  
   margin: auto; 
 }
 
