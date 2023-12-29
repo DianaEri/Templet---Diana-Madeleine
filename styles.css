@@ -236,7 +236,7 @@ div.language {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
-    max-width: fit-content;
+    max-width: min-content;
 }
 
 
@@ -1228,12 +1228,32 @@ Sedan har jag använt space between för mellanrum
         display: none;
     }
 
-    .Search-Small {
-        display: none;
+    nav.top-desktop-nav ul {
+        padding-right: 0%;
+    }
+
+    .rfsllogo {
+        max-width: 6em;
+    }
+
+    #enButton {
+    display: none;
+    }
+
+    .transparentBox {
+        width: 3rem; 
+    } 
+
+    #light-theme {
+        padding: 8px;
     }
     
-    .language {
-        display: none;
+    #medium-theme {
+        padding: 8px;
+    }
+    
+    #dark-theme {
+        padding: 8px;
     }
 }
 
