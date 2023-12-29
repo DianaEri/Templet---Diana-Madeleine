@@ -77,6 +77,15 @@ header {
     /* padding: .8em 1.5em;  */
 }
 
+/*Gör menyn sticky så att den följer med när man scrollar. W3Schools guide: https://www.w3schools.com/howto/howto_css_sticky_element.asp*/
+.navbar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 6000; 
+    width: 100%;
+}
+
 /*placering av logotyp*/
 .logo-wrapper {
     flex-grow: 1;
@@ -133,41 +142,59 @@ header {
     border-radius: 50%;
 }
 
-.logo-wrapper button.selected {
-    border: 3px solid black;
+
+.hamburger-wrapper,
+.logo-wrapper,
+#Search-Form,
+.top-desktop-nav,
+.language {
+    flex: 1;
+    text-align: center; 
 }
 
-/*styling av den övre navigatiosmenyn */
-nav.top-desktop-nav {
-    display: inline-flex;
-    flex-direction: row-reverse;
-    flex: 1 1 0;
-    margin: 0;
-    max-width: fit-content;
+.logo-wrapper button.selected {
+    border: 3px solid black;
 }
 
 /*stilar för listan i den övre navigationsmenyn*/
 nav.top-desktop-nav ul {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
+    text-align: center;
+}
+
+/*Utseende för logotyp*/
+nav.top-desktop-nav li {
+    margin: 0 2em;
+    padding: 0;
 }
 
 /* styling för länkarna inom listelement*/
 nav.top-desktop-nav li a {
-    text-decoration: none;
+    display: block;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 0.8em;
+    max-width: max-content;
 }
 
-/*styling av knappar på den övre navigationsmenyn*/
+/*Hur meny knapparna ser ut*/
 nav.top-desktop-nav a button {
-    letter-spacing: 0.05em;  
+    text-decoration: none;
+    letter-spacing: 0.5rem;
+    color: var(--color-secondary);
+    letter-spacing: 0.05em;
+    padding: 0.5em;
+    background-color: var(--color-fourth);
 }
 
 /*länkar ändrar bakgrundsfärg när man hovrar*/
 nav.top-desktop-nav a button:hover {
-    font-size: 2rem;
-    transition: background-color 0.3s ease;
+    padding: 0.5em;
+    color: var(--color-tenth);
 }
 
 /*HEADER START*/
@@ -178,7 +205,6 @@ header {
     flex-direction: row;
     justify-content: flex-start; 
     align-items: center;
-    /* background-color:  rgba(255, 116, 72, 0.4);  */
 } 
 
 /*En transparent box så att inget ska vara ivägen för hamburger
@@ -212,16 +238,6 @@ menyn när den sitter på toppen av "header"*/
     }
 }
 
-/*Centrerar allting tillsammans"*/
-.hamburger-wrapper,
-.logo-wrapper,
-#Search-Form,
-.top-desktop-nav,
-.language {
-    flex: 1;
-    text-align: center; 
-}
-
 /*styling av language-elementen*/
 div.language {
     display: flex;
@@ -252,7 +268,8 @@ div.language {
     display: flex;
     text-align: right;
     margin-left: 0;
-    padding-left: 3%;
+    padding-left: 2%;
+    padding-right: 1.5%;
 }
 
 
@@ -321,14 +338,6 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     
 }
 
-/*länkar ändrar bakgrundsfärg när man hovrar*/
-nav.top-desktop-nav a button:hover {
-    padding: 0.5em;
-    font-size: 100%;
-    transition: background-color 0.3s ease;
-
-}
-
 .mobileheader {
     display: none;
 }
@@ -358,7 +367,7 @@ nav.top-desktop-nav a button:hover {
 
     margin-right: 0%;
 
-    margin-left: 2%;
+    margin-left: 1%;
 
 }
 
@@ -403,54 +412,6 @@ input[type=text],input[type=text]::placeholder{
     }
 }
 
-/*codePen meny inspiration Slut*/*/
-
-
-/*Utseende på navigations menyn*/
-nav.top-desktop-nav {
-    text-align: center;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    font-size: 0.8rem;
-}
-
-
-/*Utseende för logotyp*/
-nav.top-desktop-nav li {
-    margin: 0;
-    padding: 0;
-}
-
-/*Tar bort understrykning från länkarna i menyn*/
-nav.top-desktop-nav li a {
-    text-decoration: none;
-  
-}
-
-/*Hur meny knapparna ser ut*/
-nav.top-desktop-nav a button {
-    letter-spacing: 0.5rem;
-    background-color: var(--color-fourth);
-}
-
-/*länkar ändrar bakgrundsfärg när man hovrar*/
-nav.top-desktop-nav a button:hover {
-    padding: 0.5rem;
-    font-size: 100%;
-
-}
-
-/*Gör menyn sticky så att den följer med när man scrollar. W3Schools guide: https://www.w3schools.com/howto/howto_css_sticky_element.asp*/
-.navbar-sticky {
-    position: -webkit-sticky; 
-    position: sticky;
-    top: 0;
-    z-index: 6000; 
-    width: 100%;
-}
-
 /*HEADER END*/
 
 
@@ -459,41 +420,6 @@ header {
     display: flex;
 
     background-color: var(--color-fourth);
-}
-
-/*styling av den övre navigatiosmenyn */
-nav.top-desktop-nav {
-    text-align: center;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    font-size: 0.8em;
-}
-
-
-/* styling för listelement*/
-nav.top-desktop-nav li {
-    margin: 0 2em;
-}
-
-/* styling för länkarna inom listelement*/
-nav.top-desktop-nav li a {
-    text-decoration: none;
-}
-
-/*styling av knappar på den övre navigationsmenyn*/
-nav.top-desktop-nav a button {
-    color: var(--color-secondary);
-    letter-spacing: 0.05em;
-    padding: 0.5em;
-    
-}
-
-/*länkar ändrar bakgrundsfärg när man hovrar*/
-nav.top-desktop-nav a button:hover {
-    padding: 0.5em;
-    color: var(--color-tenth);
 }
 
 /* slut top-nav  - my, josephine, louise*/
@@ -873,13 +799,13 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
 } 
 
 .text h2 {
-    padding-bottom: 20px;
+    padding-bottom: 5%;
     text-align: center;
     font-size: large;
 }
 
 .text p {
-    padding-bottom: 20px;
+    padding-bottom: 5%;
 }
 
 .text a {
@@ -1109,7 +1035,7 @@ Sedan har jag använt space between för mellanrum
     }
 
     .articlebody {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .text h2 {
@@ -1169,7 +1095,7 @@ Sedan har jag använt space between för mellanrum
     }
 
     .rfsllogo {
-        max-width: 8em;
+        max-width: 9em;
     }
 
     .stripe {
@@ -1250,7 +1176,7 @@ Sedan har jag använt space between för mellanrum
     }
 
     .rfsllogo {
-        max-width: 7em;
+        max-width: 8em;
     }
 
     .text {
@@ -1294,13 +1220,26 @@ Sedan har jag använt space between för mellanrum
         max-width: 100%;
     }
 
-    .rfsllogo {
-        max-width: 7em;
+    .text {
+        padding: 0% 15%;
     }
 
-    .text {
-        padding: 0% 10%;
+    .text h2 {
+        font-size: 0.9em;
+        padding-bottom: 1%;
     }
+
+    .text p {
+        font-size: 0.9em;
+        padding-bottom: 1%;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+
 
 }
 
