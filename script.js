@@ -50,7 +50,7 @@ function showSlides(n) {
 
 const h2 = document.querySelector('.second_h2')
 
-function myFunction() {
+function resize() {
     var x = document.getElementById("myDIV");
     if (x.style.display === "none") {
       x.style.display = "block";
