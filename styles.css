@@ -525,15 +525,9 @@ Youtube: https://www.youtube.com/watch?v=XM7sEpl0f7c&ab_channel=PureCode
 Px to rem calculator: https://nekocalc.com/px-to-rem-converter
 */
 
-/*Ge hamburgaren luftig plats på "header"*/
-.hamburgerIconSpace {
-    padding-right: 5rem; 
-}
-
 /* Stilar för  hamburgermenyn. Förflyttningar osv...*/
 .hamburgerNavigation {
     display: flex;
-    justify-content: space-between;
     align-items:center;
     }
 
@@ -691,12 +685,13 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
         position: fixed;
         margin-top: 0;
         margin-left: 0;
-        z-index: 6000;
       }
 
       /* X ikonen, för att stänga hamburger menyn */
-.hamburgerImage {
-    content: url("hamburgerIcon.png");
+#hamburgerImage {
+    font-size: 3em;
+    color: var(--color-secondary);
+    padding-left: 45%;
 }
 
 /* Byter bild från hamburgaren till ett X. X kommer fram när man öppnar hamburgar menyn. Hamburgaren kommer fram, när man stänger menyn*/
@@ -1022,6 +1017,18 @@ Sedan har jag använt space between för mellanrum
     .text h2 {
         font-size: 1em;
     } 
+
+    #hamburgerImage {
+
+    }
+
+    #hamburgerImage {
+        font-size: 2em;
+    }
+
+    .rfsllogo {
+        max-width: 10em;
+    }
     
 }
 
@@ -1163,6 +1170,12 @@ Sedan har jag använt space between för mellanrum
     .text {
         padding: 1% 10%;
     }
+
+    #hamburgerImage {
+        font-size: 1.5em;
+    }
+
+
 }
 
 @media (max-width: 480px) {
@@ -1218,9 +1231,11 @@ Sedan har jag använt space between för mellanrum
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
 
-
+    #hamburgerImage {
+        font-size: 1.3em;
+    }
 
 }
 
