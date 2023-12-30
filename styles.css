@@ -285,8 +285,8 @@ div.language li a {
 div.language li a button {
     border-radius: 50%;
     color: var(--color-secondary);
-    padding: 25%;
-    /* border: 2px solid var(--color-secondary); */
+    padding: 23%;
+    border: 2px solid var(--color-secondary); 
     font-weight: bold; 
     background-color: var(--color-fifth);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
