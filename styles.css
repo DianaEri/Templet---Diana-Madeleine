@@ -370,7 +370,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     padding: 0;
     background-color: var(--color-secondary);
     border-radius: 30px;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 #Search-Bar {
@@ -393,7 +393,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 input[type=text],input[type=text]::placeholder{
     color: var(--color-tenth);
     font-weight: bold;
-    width: 10em;
+    width: 9.5em;
 }
     
 /*Here <!--SearchboxENDS-->*/
