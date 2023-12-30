@@ -261,8 +261,7 @@ div.language {
     display: flex;
     text-align: right;
     margin-left: 0;
-    padding-left: 2%;
-    padding-right: 1.5%;
+    padding: 0em 1.5em;
 }
 
 
@@ -273,7 +272,7 @@ div.language ul {
 
 
 div.language li {
-    margin: 0 0.2em;
+    padding: 0em 0.4em;
 }
 
 
@@ -286,11 +285,11 @@ div.language li a {
 div.language li a button {
     border-radius: 50%;
     color: var(--color-secondary);
-    padding: 15%;
-    border: 2px solid var(--color-secondary);
-    font-weight: bold;
+    padding: 25%;
+    /* border: 2px solid var(--color-secondary); */
+    font-weight: bold; 
     background-color: var(--color-fifth);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.20) 0px 2px 16px 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 /* knapparna för språk blir större när man hovrar */
@@ -342,9 +341,9 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 
     background-color: var(--color-secondary);
 
-    max-width: fit-content;
+    max-width: min-content;
 
-    max-height: 3em;
+    max-height: 2.8em;
 
     border-radius: 30px;
 
@@ -361,6 +360,8 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     margin-right: 0%;
 
     margin-left: 1%;
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
 }
 
@@ -391,6 +392,8 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 
 input[type=text],input[type=text]::placeholder{
     color: var(--color-tenth);
+    font-weight: bold;
+    width: 10em;
 }
     
 /*Here <!--SearchboxENDS-->*/
@@ -689,7 +692,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
 
       /* X ikonen, för att stänga hamburger menyn */
 #hamburgerImage {
-    font-size: 3em;
+    font-size: 2.5em;
     color: var(--color-secondary);
     padding-left: 45%;
 }
@@ -789,9 +792,10 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
 }
 
 .text a {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
+    border-bottom: 2px solid var(--color-tenth);
+    font-weight: bold;
+    color: var(--color-tenth);
+    padding-bottom: 2px;
 }
 
 /* Number text (1/3 etc) */
