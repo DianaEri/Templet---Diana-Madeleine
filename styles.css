@@ -355,7 +355,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 
     border-color: var(--color-tenth);
 
-    border: 2px solid var(--color-tenth);
+    border: 2px solid var(--color-tenth); 
 
     margin-right: 0%;
 
