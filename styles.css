@@ -179,9 +179,9 @@ nav.top-desktop-nav li {
 /* styling för länkarna inom listelement*/
 nav.top-desktop-nav li a {
     display: block;
-    font-weight: bold;
     font-size: 0.8em;
     max-width: max-content;
+    font-weight: bold;
 }
 
 /*Hur meny knapparna ser ut*/
