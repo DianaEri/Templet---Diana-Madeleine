@@ -1125,6 +1125,10 @@ Sedan har jag använt space between för mellanrum
         padding: 5% 30%;
         background-color: var(--color-ninth);
     }
+
+    .footer-wave {
+        margin-top: 5%;
+    }
     
 }
 
