@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="100" width="500">
+  <path d="M 0 50 
+           Q 125 0, 250 50, 375 100, 500 50
+           L 500 100
+           L 0 100
+           L 0 50
+           Z" stroke="blue" stroke-width="1" fill="red" />
+</svg>
