@@ -89,6 +89,10 @@ header {
     z-index: 6000;
 }
 
+.footer-wave {
+    margin-bottom: -1%;
+}
+
 /*placering av logotyp*/
 .logo-wrapper {
     flex-grow: 1;
