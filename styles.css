@@ -1187,6 +1187,9 @@ Sedan har jag använt space between för mellanrum
         font-size: 1.5em;
     }
 
+    .footer-wave {
+        margin-top: 6%;
+    }
 
 }
 
@@ -1275,6 +1278,11 @@ Sedan har jag använt space between för mellanrum
         .footer-wave {
             margin-bottom: -2%;
         }
+
+        .footer-wave {
+            margin-top: 7%;
+        }
+    
 }
 
 @media (max-width: 320px) {
