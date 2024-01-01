@@ -1263,6 +1263,10 @@ Sedan har jag använt space between för mellanrum
     #enButton {
         display: none;
         }
+
+        .footer-wave {
+            margin-bottom: -2%;
+        }
 }
 
 @media (max-width: 320px) {
