@@ -152,7 +152,7 @@ header {
 
 .hamburger-wrapper,
 .logo-wrapper,
-#Search-Form,
+.searchbar,
 .top-desktop-nav,
 .language {
     flex: 1;
@@ -213,28 +213,6 @@ menyn när den sitter på toppen av "header"*/
     width: 1rem; 
     height: 2.5rem;
 } 
-
-
-.Search-Small {
-    background-color: var(--color-secondary);
-    border: 2px solid var(--color-tenth);
-    color: var(--color-tenth);
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-right: 7px;
-    padding-left: 7px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 50%;
-}
-
-@media screen and (min-width: 767px) {
-    .Search-Small {
-        display: none;
-    }
-}
 
 /*styling av language-elementen*/
 div.language {
@@ -342,65 +320,90 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 
 /*Here<!--SearchboxSTARTS-->    - William */
 
-#Search-Form {
-
-    background-color: var(--color-secondary);
-
-    max-width: min-content;
-
-    max-height: 2.8em;
-
-    border-radius: 30px;
-
+.searchbar {
     display: flex;
-
+    justify-content: center;
     align-items: center;
-
-    padding: 1em;
-
-    border-color: var(--color-tenth);
-
-    border: 2px solid var(--color-tenth); 
-
-    margin-right: 0%;
-
-    margin-left: 1%;
-
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-
+    max-width: min-content;
 }
 
-#Search-Form i {
-    color: var(--color-tenth);
-    padding: 0;
-    background-color: var(--color-secondary);
-    border-radius: 30px;
-    font-size: 22px;
+form{
+    position: relative;
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: var(--color-fourth);
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid var(--color-fourth);
+    padding: 5px;
 }
 
-#Search-Bar {
-    border-radius: 30px;
-    outline: none;
-    background-color: var(--color-secondary);
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
 }
 
-#Search-Button {
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border-radius: 30px;
-    background: none;
-    border: none;
-    font-size: 12px;
-    color: var(--color-tenth);
+form .fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: var(--color-secondary);
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
 }
 
-input[type=text],input[type=text]::placeholder{
-    color: var(--color-tenth);
-    font-weight: bold;
-    width: 9.5em;
+form:hover,
+form:valid{
+    width: 200px;
+    cursor: pointer;
 }
-    
+
+form:hover input,
+form:valid input{
+    display: block;
+}
+
+form:hover .fa,
+form:valid .fa{
+    background: #07051a;
+    color: white;
+}
+
+
+form a {
+  display: none;
+  position: absolute;
+  top: 70px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  color: white;
+  text-align: center; 
+  width: 100%;
+}
+
+form:valid a {
+  display: block;
+}
+
 /*Here <!--SearchboxENDS-->*/
 
 
@@ -1010,14 +1013,6 @@ Sedan har jag använt space between för mellanrum
 
 @media (max-width: 1574px) {
 
-    #Search-Form {
-        display: none;
-    }
-
-    .Search-Small {
-        display: block;
-    }
-
     .articlehead {
         font-size: 1em;
     }
@@ -1241,10 +1236,6 @@ Sedan har jag använt space between för mellanrum
     .text p {
         font-size: 0.9em;
         padding-bottom: 1%;
-    }
-
-    .Search-Small {
-        display: none;
     }
 
     nav.top-desktop-nav ul {
