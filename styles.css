@@ -78,46 +78,43 @@ header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(to bottom, var(--color-fourth) 50%, var(--color-primary) 50%);
-}
-
-.logo-wrapper {
-    display: flex;
-    width: 30%;
-    align-items: center;
-    padding: 1em;
-    gap: 1em;
-}
-
-.rfsllogo {
-    width: 8em;
-    height: 8em;
-    border: 8px solid var(--color-primary);
-    border-radius: 50%;     
-    background-color: var(--color-fourth);
-}
-
-.navigation {
-    display: flex;
-    width: 70%;
-    flex-direction: column;
-    height: 100%;
 }
 
 .topnav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end; 
     align-items: center;
     padding: 1em;
+    width: 100%;
+    background-color: var(--color-fourth);
+    height: 3.5em;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; 
+    margin-left: 0%;
+    height: 2em;
+    padding: 1em;
+    gap: 1em;
+}
+
+.rfsllogo {
+    height: 4em;
+    width: 8em;
 }
 
 .bottomnav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center;
     padding: 1.5em;
+    width: 100%;
+    background-color: var(--color-primary);
+    height: 3.5em;
 }
 
 /*Gör menyn sticky så att den följer med när man scrollar. W3Schools guide: https://www.w3schools.com/howto/howto_css_sticky_element.asp*/
@@ -125,7 +122,6 @@ header {
     position: -webkit-sticky; 
     position: sticky;
     top: 0;
-    width: 100%;
     z-index: 6000;
 }
 
@@ -136,7 +132,7 @@ header {
 
 #light-theme {
     background-color: white;
-    padding: 12px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -148,7 +144,7 @@ header {
 
 #medium-theme {
     background-color: #B0B7C0;
-    padding: 12px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -160,7 +156,7 @@ header {
 
 #dark-theme {
     background-color: #2b2b2b;
-    padding: 12px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -183,7 +179,7 @@ nav.top-desktop-nav ul {
     align-items: center;
     list-style-type: none;
     text-align: center;
-    justify-content: end;
+    justify-content: flex-end; 
     padding-right: 8%;
     width: 70em;
 }
@@ -218,8 +214,6 @@ nav.top-desktop-nav a button:hover {
 /*styling av language-elementen*/
 div.language {
     display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
     max-width: min-content;
 }
 
@@ -320,7 +314,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 
 .searchbar {
     display: flex;
-    justify-content: center;
+    margin-left: auto;
     align-items: center;
     max-width: min-content;
     color: var(--color-secondary);
@@ -580,6 +574,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        margin-right: 0%;
         transition: 0.3s;
     }
     
@@ -611,7 +606,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
             display: block;
         }
     
-        /*Full width and height for hamburgerMenu */
+        /* Full width and height for hamburgerMenu */
         .hamburgerMenu {
             position: fixed;
             top: 0;
@@ -655,7 +650,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
             justify-content: center;
             font-size: 1.5rem !important;
             font-weight: 800;
-            z-index: 6000; 
+            z-index: 5000; 
         }
         
           /*Luft i listan med alla komponeneter i meny listan*/
@@ -693,12 +688,12 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
     .hamburger-wrapper {
         position: fixed;
         margin-top: 0;
-        margin-left: 0;
+        margin-right: 0em;
       }
 
       /* X ikonen, för att stänga hamburger menyn */
 #hamburgerImage {
-    font-size: 2.5em;
+    font-size: 1.5em;
     color: var(--color-secondary);
     padding-right: 45%;
 }
@@ -1023,22 +1018,10 @@ Sedan har jag använt space between för mellanrum
         font-size: 1em;
     } 
 
-    #hamburgerImage {
-        font-size: 2em;
-    }
-
-    .rfsllogo {
-        max-width: 10em;
-    }
     
 }
 
 @media (max-width: 1310px) {
-
-
-    nav.top-desktop-nav {
-        display: none; /*gömmer navigeringslänkar i headern på mindre skärm*/
-    }
 
     .text {
         font-size: small;
@@ -1081,10 +1064,6 @@ Sedan har jag använt space between för mellanrum
 
     #myDIV {
         max-width: 70%;
-    }
-
-    .rfsllogo {
-        max-width: 9em;
     }
 
     .stripe {
@@ -1168,10 +1147,6 @@ Sedan har jag använt space between för mellanrum
         max-width: 80%;
     }
 
-    .rfsllogo {
-        max-width: 8em;
-    }
-
     .text {
         padding: 1% 10%;
     }
@@ -1238,10 +1213,6 @@ Sedan har jag använt space between för mellanrum
 
     nav.top-desktop-nav ul {
         padding-right: 0%;
-    }
-
-    .rfsllogo {
-        max-width: 6em;
     }
 
     .transparentBox {
