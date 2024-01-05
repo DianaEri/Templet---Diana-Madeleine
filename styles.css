@@ -686,8 +686,6 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
 
      /* Gör så att hamburgaren ignorerar headern. Annars triggas heasdern och blir större när hamburgar menyn öppnas */
     .hamburger-wrapper {
-        position: fixed;
-        margin-top: 0;
         margin-right: 0em;
       }
 
