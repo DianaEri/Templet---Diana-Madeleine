@@ -84,7 +84,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1em;
+    padding: 0.5em;
     width: 100%;
     background-color: var(--color-fourth);
     height: 3.5em;
@@ -102,8 +102,8 @@ header {
 }
 
 .rfsllogo {
-    height: 4em;
-    width: 8em;
+    height: 5em; 
+    width: 9em;
 }
 
 .bottomnav {
