@@ -877,7 +877,7 @@ Sedan har jag använt space between för mellanrum
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px 0px; 
+    gap: 70px 0px; 
     /* justify-content: center; */
     margin-top: 6%;
     margin-bottom: 3%;
@@ -968,7 +968,6 @@ Sedan har jag använt space between för mellanrum
 
 .cardheader {
     position: relative;
-    width: 80%;
 }
 
 .colored {
@@ -986,7 +985,7 @@ Sedan har jag använt space between för mellanrum
 }
 
 .colored1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     position: absolute;
     top: 50%;
     left: 50%;
