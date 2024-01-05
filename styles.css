@@ -686,8 +686,6 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
 
      /* Gör så att hamburgaren ignorerar headern. Annars triggas heasdern och blir större när hamburgar menyn öppnas */
     .hamburger-wrapper {
-        position: fixed;
-        margin-top: 0;
         margin-right: 0em;
       }
 
@@ -877,7 +875,7 @@ Sedan har jag använt space between för mellanrum
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 70px 0px; 
+    gap: 50px 0px; 
     /* justify-content: center; */
     margin-top: 6%;
     margin-bottom: 3%;
