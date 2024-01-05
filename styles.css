@@ -120,7 +120,7 @@ header {
 /*Gör menyn sticky så att den följer med när man scrollar. W3Schools guide: https://www.w3schools.com/howto/howto_css_sticky_element.asp*/
 #navbar-sticky {
     position: -webkit-sticky; 
-    position: sticky;
+    position: sticky !important;
     top: 0;
     z-index: 6000;
 }
