@@ -7,7 +7,7 @@
     --color-primary: #fffdfc;
     --color-secondary: #41284a;
     --color-third: #D4F1F4;
-    --color-fourth: #94C973;
+    --color-fourth: #f6f5de;
     --color-fifth: #f1e0ff;
     --color-sixth: rgba(65, 40, 74, 0.9);
     --color-seventh: rgba(65, 40, 74, 0.8);
@@ -78,7 +78,7 @@ header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(to bottom, var(--color-fourth) 50%, var(--color-eigth) 50%);
+    background: linear-gradient(to bottom, var(--color-fourth) 50%, var(--color-primary) 50%);
 }
 
 .logo-wrapper {
@@ -92,7 +92,7 @@ header {
 .rfsllogo {
     width: 8em;
     height: 8em;
-    border: 8px solid var(--color-eigth);
+    border: 8px solid var(--color-primary);
     border-radius: 50%;     
     background-color: var(--color-fourth);
 }
@@ -206,7 +206,7 @@ nav.top-desktop-nav a button {
     text-decoration: none;
     color: var(--color-secondary);
     padding: 0.5em;
-    background-color: var(--color-eigth);
+    background-color: var(--color-primary);
 }
 
 /*länkar ändrar bakgrundsfärg när man hovrar*/
