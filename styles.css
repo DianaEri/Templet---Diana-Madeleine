@@ -7,7 +7,7 @@
     --color-primary: #fffdfc;
     --color-secondary: #41284a;
     --color-third: #D4F1F4;
-    --color-fourth: #f6f5de;
+    --color-fourth: #93b29a;
     --color-fifth: #f1e0ff;
     --color-sixth: rgba(65, 40, 74, 0.9);
     --color-seventh: rgba(65, 40, 74, 0.8);
@@ -84,7 +84,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.5em;
+    padding: 0.5em 0.5em 0.5em 0em;
     width: 100%;
     background-color: var(--color-fourth);
     height: 3.5em;
@@ -877,15 +877,25 @@ Sedan har jag använt space between för mellanrum
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 10px; 
-    justify-content: center;
+    gap: 50px 0px; 
+    /* justify-content: center; */
     margin-top: 6%;
     margin-bottom: 3%;
 }
 
+.stripe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px 0px;
+    justify-content: center;
+    background-color: var(--color-eigth);
+    width: 100%;
+}
+
 .single {
     display: flex;
-    max-width: 48%;
+    width: 50%;
     align-content: center;
     position: relative;
     align-items: center;
@@ -895,21 +905,11 @@ Sedan har jag använt space between för mellanrum
     width: 100%;
 }
 
-
-.stripe {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px 10px;
-    justify-content: center;
-    background-color: var(--color-eigth);
-    width: 100%;
-}
-
 .double {
     display: flex;
     flex-direction: column;
-    max-width: 23.7%;
-    gap: 0.3rem 0rem;
+    width: 25%;
+    justify-content: space-around;
     font-weight: bold;
 }
 
@@ -920,12 +920,14 @@ Sedan har jag använt space between för mellanrum
 
 .article {
     padding: 8%;
+    height: 100%;
+    align-items: center;
 } 
 
 .articlehead {
     text-align: center;
-    padding-bottom: 4%;
-    font-size: 1.4em;
+    font-size: 1.6em;
+    padding: 2em 0em;
     font-weight: bold;
     color: var(--color-fourth);
 }
@@ -1049,12 +1051,12 @@ Sedan har jag använt space between för mellanrum
     }
 
     .double {
-        max-width: 95%;
+        width: 95%;
         gap: 50px 0px;
     }
 
     .single {
-        max-width: 95%;
+        width: 95%;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     }
 
