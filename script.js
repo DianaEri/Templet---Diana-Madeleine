@@ -68,6 +68,14 @@ var navbar = document.getElementById("navbar-sticky");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
