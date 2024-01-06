@@ -270,7 +270,7 @@ div.language li a button {
 
 /* knapparna för språk blir större när man hovrar */
 div.language li a button:hover {
-    padding: 0.8em;
+    color: #68A4F1;
 }
 
 /* En bit av codepens kod användes som inspiration för att göra menyn till "Bli medlem", 
