@@ -911,10 +911,6 @@ Sedan har jag använt space between för mellanrum
         display: flex;
     }
 
-    #svButton {
-        display: none; /*gömmer svenska språkvalsknappen på mindre skärm*/
-    }
-
     .flex-container {
         flex-direction: column;
     }
@@ -1000,10 +996,6 @@ Sedan har jag använt space between för mellanrum
         display: flex;
     }
 
-    #svButton {
-        display: none; /*gömmer svenska språkvalsknappen på mindre skärm*/
-    }
-
     footer .footer-nav h1 {
         font-size: 2em;
     }
@@ -1043,7 +1035,7 @@ Sedan har jag använt space between för mellanrum
     }
     
     .rfsllogo {
-        width: 6em;
+        width: 5em;
     }
 
     #light-theme {
@@ -1061,6 +1053,11 @@ Sedan har jag använt space between för mellanrum
     .logo-wrapper {
         gap: 0.5em;
     }
+
+    div.language a {
+        font-size: small;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -1072,10 +1069,6 @@ Sedan har jag använt space between för mellanrum
     
     nav.top-desktop-nav {
         display: none; /*gömmer navigeringslänkar i headern på mindre skärm*/
-    }
-
-    #svButton {
-        display: none; /*gömmer svenska språkvalsknappen på mindre skärm*/
     }
 
     footer ul {
@@ -1133,16 +1126,16 @@ Sedan har jag använt space between för mellanrum
         padding: 9px;
     }
 
-    #enButton {
-        display: none;
-        }
-
     .footer-wave {
         margin-bottom: -2%;
     }
 
     .footer-wave {
         margin-top: 7%;
+    }
+
+    div.language a {
+        display: none;
     }
     
 
