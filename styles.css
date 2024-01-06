@@ -288,7 +288,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 70px;
 }
   
 .sidepanel a {
@@ -307,7 +307,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 .sidepanel .closebtn {
     position: absolute;
     top: 0;
-    left: 25px;
+    right: 10px;
     font-size: 36px;
 }
 
@@ -1041,7 +1041,26 @@ Sedan har jag använt space between för mellanrum
     .footer-wave {
         margin-top: 6%;
     }
+    
+    .rfsllogo {
+        width: 5em;
+    }
 
+    #light-theme {
+        padding: 8px;
+    }
+    
+    #medium-theme {
+        padding: 8px;
+    }
+    
+    #dark-theme {
+        padding: 8px;
+    }
+
+    .logo-wrapper {
+        gap: 0.5em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1118,14 +1137,15 @@ Sedan har jag använt space between för mellanrum
         display: none;
         }
 
-        .footer-wave {
-            margin-bottom: -2%;
-        }
+    .footer-wave {
+        margin-bottom: -2%;
+    }
 
-        .footer-wave {
-            margin-top: 7%;
-        }
+    .footer-wave {
+        margin-top: 7%;
+    }
     
+
 }
 
 
