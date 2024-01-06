@@ -238,7 +238,7 @@ div.language li {
 }
 
 
-div.language li a {
+div.language a {
     text-decoration: none;
     padding-right: 1em;
 }
@@ -1058,6 +1058,11 @@ Sedan har jag använt space between för mellanrum
         font-size: small;
     }
 
+    nav.top-desktop-nav {
+        font-size: small; 
+    }
+
+
 }
 
 @media (max-width: 480px) {
@@ -1068,7 +1073,11 @@ Sedan har jag använt space between för mellanrum
     }
     
     nav.top-desktop-nav {
-        display: none; /*gömmer navigeringslänkar i headern på mindre skärm*/
+        display: none; 
+    }
+
+    div.language a {
+        display: none;
     }
 
     footer ul {
@@ -1133,12 +1142,6 @@ Sedan har jag använt space between för mellanrum
     .footer-wave {
         margin-top: 7%;
     }
-
-    #svButton {
-        display: none;
-    }
-    
-
 }
 
 
