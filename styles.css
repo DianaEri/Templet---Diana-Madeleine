@@ -1035,7 +1035,7 @@ Sedan har jag använt space between för mellanrum
     }
     
     .rfsllogo {
-        width: 5em;
+        width: 6em;
     }
 
     #light-theme {
@@ -1134,7 +1134,7 @@ Sedan har jag använt space between för mellanrum
         margin-top: 7%;
     }
 
-    div.language a {
+    #svButton {
         display: none;
     }
     
