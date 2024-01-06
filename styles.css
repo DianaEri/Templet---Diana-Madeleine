@@ -80,13 +80,13 @@ header {
     flex-wrap: wrap;
 }
 
-.topnav {
+.bottomnav {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0.5em 0.5em 0.5em 0em;
     width: 100%;
-    background-color: var(--color-fourth);
+    background-color: var(--color-primary);
     height: 3.5em;
 }
 
@@ -95,25 +95,27 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start; 
-    margin-left: 0%;
+    margin-left: 0;
     height: 2em;
     padding: 1em;
     gap: 1em;
+    margin-top: -3%;
+    z-index: 6000;
 }
 
 .rfsllogo {
     height: 5em; 
-    width: 9em;
+    width: 12em;
 }
 
-.bottomnav {
+.topnav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     padding: 1.5em;
     width: 100%;
-    background-color: var(--color-primary);
+    background-color: var(--color-fourth);
     height: 3.5em;
 }
 
@@ -170,7 +172,14 @@ header {
     border: 4px solid grey;
 }
 
-/*stilar för listan i den övre navigationsmenyn*/
+.nav.top-desktop-nav {
+    display: flex;
+    flex-direction: row;
+    max-width: max-content;
+    margin-left: auto;
+}
+
+/* stilar för listan i den övre navigationsmenyn */
 nav.top-desktop-nav ul {
     display: flex;
     flex-direction: row;
@@ -181,7 +190,7 @@ nav.top-desktop-nav ul {
     text-align: center;
     justify-content: flex-end; 
     padding-right: 8%;
-    width: 70em;
+    width: 40em;
 }
 
 /*Utseende för logotyp*/
@@ -202,7 +211,7 @@ nav.top-desktop-nav a button {
     text-decoration: none;
     color: var(--color-secondary);
     padding: 0.5em;
-    background-color: var(--color-primary);
+    background-color: var(--color-fourth);
 }
 
 /*länkar ändrar bakgrundsfärg när man hovrar*/
@@ -215,6 +224,8 @@ nav.top-desktop-nav a button:hover {
 div.language {
     display: flex;
     max-width: min-content;
+    margin-left: auto;
+    text-align: right;
 }
 
 
@@ -233,14 +244,6 @@ div.language li a {
     text-decoration: none;
     padding-right: 1em;
 }
-
-/*styling av language-elementen*/
-div.language {
-    display: flex;
-    text-align: right;
-    margin-left: 0;
-}
-
 
 div.language ul {
     display: flex;
@@ -264,7 +267,7 @@ div.language li a button {
     color: var(--color-secondary);
     padding: 23%;
     font-weight: bold; 
-    background-color: var(--color-fourth);
+    background-color: var(--color-primary);
 }
 
 /* knapparna för språk blir större när man hovrar */
@@ -286,12 +289,12 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 
 
 
-/*Ändra utseende på navigationen */
+/* Ändra utseende på navigationen
 .navbar {
     display: inline;
     float: right;
     font-size: 0.9rem;
-}
+} */
 
 /*Ta bort punklista */
 .main-nav {
@@ -314,7 +317,6 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 
 .searchbar {
     display: flex;
-    margin-left: auto;
     align-items: center;
     max-width: min-content;
     color: var(--color-secondary);
@@ -324,10 +326,10 @@ form{
     position: relative;
     width: 50px;
     height: 50px;
-    background: var(--color-fourth);
+    background: var(--color-primary);
     box-sizing: border-box;
     border-radius: 25px;
-    border: 4px solid var(--color-fourth);
+    border: 4px solid var(--color-primary);
     padding: 5px;
 }
 
@@ -592,7 +594,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
     
     /* När checkboxen är markerad, visa menyn genom att ändra positionen till vänster */
     .hamburgerNavigation input:checked ~ .hamburgerMenu {
-        left: 0;
+        right: 0;
         box-shadow: -1.25rem 0 2.5rem rgba(0, 0, 0, 0.3); 
     }
     
@@ -610,7 +612,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
         .hamburgerMenu {
             position: fixed;
             top: 0;
-            left: 0;
+            right: 0;
             width: 100vw;
             height: 100vh;
             background: #DDDDDD;
@@ -640,7 +642,7 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
         .hamburgerMenu {
             position: fixed;
             top: 0;
-            left: 0;
+            right: 0;
             width: 100vw;
             height: 100vh;
             background: #DDDDDD;
@@ -687,15 +689,14 @@ Px to rem calculator: https://nekocalc.com/px-to-rem-converter
      /* Gör så att hamburgaren ignorerar headern. Annars triggas heasdern och blir större när hamburgar menyn öppnas */
     .hamburger-wrapper {
         position: fixed;
-        /* margin-top: 0; */
-        margin-right: 0em;
+        margin-top: 0; 
+        margin-right: 0;
       }
 
       /* X ikonen, för att stänga hamburger menyn */
 #hamburgerImage {
     font-size: 1.5em;
     color: var(--color-secondary);
-    padding-right: 45%;
 }
 
 /* Byter bild från hamburgaren till ett X. X kommer fram när man öppnar hamburgar menyn. Hamburgaren kommer fram, när man stänger menyn*/
