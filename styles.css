@@ -319,32 +319,75 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 }
 
 .search-container {
-    float: left;
     padding: 8px 8px 8px 32px;
 }
-  
-.search-container input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-    width: 11em;
+
+.search-container .input{
+	border: 0;
+	outline: none;
+	color: #8b7d77;
 }
-  
-.search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
+
+.search_wrap{
+	width: 235px;
 }
-  
-.search-container button:hover {
-    background: #ccc;
+
+.search_wrap .search_box{
+	position: relative;
+	width: 235px;
+	height: 45px;
 }
+
+.search_wrap .search_box .input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	border-radius: 3px;
+	font-size: 18px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.search_wrap .search_box .btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 100%;
+	background: var(--color-fourth);
+	z-index: 1;
+	cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover{
+	background: #708bd2;	
+}
+
+.search_wrap .search_box .btn.btn_common .fas{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 20px;
+}
+
+.search_wrap.search_wrap_3 .search_box .input{
+	padding-right: 80px;
+}
+
+
+.search_wrap.search_wrap_3 .search_box .input {
+	border-radius: 50px;
+}
+
+.search_wrap.search_wrap_3 .search_box .btn{
+	right: 0px;
+	border-radius: 50%;
+}
+
 
 /*codePen meny inspiration Start. För menyn: "Bli medlem" "Ge en gåva" "Begreppsordlista"*/
 
@@ -405,7 +448,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     position: absolute;
     top: 0.2;
     left: 0;
-    width: 100%;;
+    width: 100%;
     height: 35px;
     line-height: 20px;
     outline: 0;
