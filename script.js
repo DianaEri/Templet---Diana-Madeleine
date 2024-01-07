@@ -69,7 +69,7 @@ var navbar = document.getElementById("navbar-sticky");
 var sticky = navbar.offsetTop;
 
 function openNav() {
-  document.getElementById("mySidepanel").style.width = "250px";
+  document.getElementById("mySidepanel").style.width = "300px";
 }
 
 function closeNav() {

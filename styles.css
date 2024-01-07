@@ -275,10 +275,10 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     width: 0;
     position: fixed;
     z-index: 1;
-    height: 600px;
+    height: 700px;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: var(--color-secondary);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 70px;
@@ -288,13 +288,13 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: var(--color-tenth);
     display: block;
     transition: 0.3s;
 }
 
 .sidepanel a:hover {
-    color: #f1f1f1;
+    color: #68A4F1;
 }
 
 .sidepanel .closebtn {
@@ -316,6 +316,34 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
   
 .openbtn:hover {
     color:  #68A4F1;
+}
+
+.search-container {
+    float: left;
+    padding: 8px 8px 8px 32px;
+}
+  
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 11em;
+}
+  
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+.search-container button:hover {
+    background: #ccc;
 }
 
 /*codePen meny inspiration Start. För menyn: "Bli medlem" "Ge en gåva" "Begreppsordlista"*/
@@ -361,7 +389,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     color: var(--color-secondary);
 }
 
-form{
+.searchbar form{
     position: relative;
     width: 50px;
     height: 50px;
@@ -373,7 +401,7 @@ form{
     right: 0.3em;
 }
 
-input{
+.searchbar input{
     position: absolute;
     top: 0.2;
     left: 0;
@@ -388,7 +416,7 @@ input{
     padding: 0 20px;
 }
 
-form .fa {
+.searchbar form .fa {
     box-sizing: border-box;
     padding: 10px;
     width: 35px;
@@ -401,26 +429,26 @@ form .fa {
     font-size: 1.1em;
 }
 
-form:hover,
-form:valid{
+.searchbar form:hover,
+.searchbar form:valid{
     width: 200px;
     cursor: pointer;
 }
 
-form:hover input,
-form:valid input{
+.searchbar form:hover input,
+.searchbar form:valid input{
     display: block;
 }
 
-form:hover .fa,
-form:valid .fa{
+.searchbar form:hover .fa,
+.searchbar form:valid .fa{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     background: var(--color-secondary);
     color: var(--color-tenth);
 }
 
 
-form a {
+.searchbar form a {
   display: none;
   position: absolute;
   top: 70px;
@@ -433,7 +461,7 @@ form a {
   width: 100%;
 }
 
-form:valid a {
+.searchbar form:valid a {
   display: block;
 }
 
