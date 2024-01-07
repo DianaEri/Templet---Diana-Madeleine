@@ -183,6 +183,7 @@ nav.top-desktop-nav ul {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5%;
+    margin-left: auto;
     align-items: center;
     list-style-type: none;
     text-align: center;
@@ -222,7 +223,6 @@ nav.top-desktop-nav a button:hover {
 div.language {
     display: flex;
     max-width: min-content;
-    margin-left: auto;
     text-align: right;
 }
 
@@ -265,7 +265,7 @@ div.language li a button {
     color: var(--color-secondary);
     padding: 23%;
     font-weight: bold; 
-    background-color: var(--color-fourth);
+    background-color: var(--color-primary);
 }
 
 /* knapparna för språk blir större när man hovrar */
@@ -283,7 +283,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     position: fixed;
     z-index: 1;
     height: 600px;
-    top: 3.5em;
+    top: 0;
     right: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -314,7 +314,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: var(--color-primary);
+    background-color: var(--color-fourth);
     color: var(--color-secondary);
     padding: 10px 0px;
     border: none;
@@ -361,6 +361,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 
 .searchbar {
     display: flex;
+    margin-left: auto;
     align-items: center;
     max-width: min-content;
     color: var(--color-secondary);
@@ -1059,9 +1060,8 @@ Sedan har jag använt space between för mellanrum
     }
 
     nav.top-desktop-nav {
-        font-size: small; 
+        display: none; 
     }
-
 
 }
 
@@ -1070,14 +1070,6 @@ Sedan har jag använt space between för mellanrum
     header {
         width: 100%;
         display:flex;
-    }
-    
-    nav.top-desktop-nav {
-        display: none; 
-    }
-
-    div.language a {
-        display: none;
     }
 
     footer ul {
