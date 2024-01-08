@@ -339,7 +339,9 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 }
 
 .search-container {
-    padding: 20px 0px 8px 32px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 .search-container .input{
