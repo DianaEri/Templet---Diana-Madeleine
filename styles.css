@@ -350,12 +350,12 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 }
 
 .search_wrap{
-	width: 255px;
+	width: 288px;
 }
 
 .search_wrap .search_box{
 	position: relative;
-	width: 255px;
+	width: 288px;
 	height: 45px;
 }
 
