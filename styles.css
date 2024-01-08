@@ -319,6 +319,10 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     padding: 70px 0px 20px;
 }
 
+div.nav-social i {
+    color: rgb(98, 98, 98);
+}
+
 .sidepanel a:hover {
     color: #68A4F1;
 }
