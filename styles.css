@@ -358,12 +358,12 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 }
 
 .search_wrap{
-	width: 288px;
+	width: 270px;
 }
 
 .search_wrap .search_box{
 	position: relative;
-	width: 288px;
+	width: 270px;
 	height: 45px;
 }
 
@@ -403,16 +403,12 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 	font-size: 20px;
 }
 
-.search_wrap.search_wrap_3 .search_box .input{
+.search_wrap .search_box .input{
 	padding-right: 80px;
+    border-radius: 50px;
 }
 
-
-.search_wrap.search_wrap_3 .search_box .input {
-	border-radius: 50px;
-}
-
-.search_wrap.search_wrap_3 .search_box .btn{
+.search_wrap .search_box .btn{
 	right: 0px;
 	border-radius: 50%;
 }
