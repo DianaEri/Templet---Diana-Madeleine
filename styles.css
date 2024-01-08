@@ -880,7 +880,7 @@ Sedan har jag använt space between för mellanrum
 }
 
 .article {
-    padding: 8%;
+    padding: 10%;
     height: 100%;
     align-items: center;
 } 
@@ -888,7 +888,7 @@ Sedan har jag använt space between för mellanrum
 .articlehead {
     text-align: center;
     font-size: 1.6em;
-    padding: 2em 0em;
+    padding: 2em 2em;
     font-weight: bold;
     color: var(--color-fourth);
 }
@@ -898,6 +898,7 @@ Sedan har jag använt space between för mellanrum
     color: var(--color-secondary);
     line-height: 1.7;
     font-size: 1em;
+    padding: 0em 2em;
 }
 
 .boxbutton {
