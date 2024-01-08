@@ -299,10 +299,9 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     font-size: 20px;
     border-bottom: 4px solid white;
     padding-bottom: 15px;
-    color: rgb(71, 70, 70);
+    color: rgb(98, 98, 98);
     display: block;
     transition: 0.3s;
-    font-weight: bold;
 }
 
 .nav-home {
