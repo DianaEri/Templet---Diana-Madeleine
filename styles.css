@@ -273,7 +273,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 
 .nav-wrapper {
     top: 0;
-    padding: 30px 0px 0px 16px;
+    padding: 10px 0px 0px 16px;
 }
 
 .navlogo {
@@ -285,7 +285,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     width: 0;
     position: fixed;
     z-index: 1;
-    height: 750px;
+    height: 700px;
     top: 0;
     right: 0;
     background-color: #dadada;
@@ -340,7 +340,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 }
 
 .search-container {
-    padding: 30px 0px 8px 32px;
+    padding: 20px 0px 8px 32px;
 }
 
 .search-container .input{
