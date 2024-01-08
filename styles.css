@@ -285,7 +285,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     width: 0;
     position: fixed;
     z-index: 1;
-    height: 700px;
+    height: 100vh;
     top: 0;
     right: 0;
     background-color: #dadada;
@@ -293,7 +293,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     transition: 0.5s;
 }
   
-.sidepanel a {
+.nav-links {
     padding: 17px 8px 17px 32px;
     text-decoration: none;
     font-size: 20px;
@@ -304,19 +304,26 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     transition: 0.3s;
 }
 
-.nav-home {
+#nav-home {
     border-top: 4px solid white;
 }
 
-.sidepanel a i {
+.nav-links i {
     float: right
+}
+
+.nav-social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px;
 }
 
 .sidepanel a:hover {
     color: #68A4F1;
 }
 
-.sidepanel .closebtn {
+.sidepanel #closebtn {
     position: absolute;
     top: 0;
     right: 0;
@@ -341,7 +348,7 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 .search-container {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .search-container .input{
@@ -408,6 +415,11 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 .search_wrap.search_wrap_3 .search_box .btn{
 	right: 0px;
 	border-radius: 50%;
+}
+
+.nav-copyright {
+    text-align: center;
+    padding-top: 50px;
 }
 
 
