@@ -73,6 +73,7 @@ var dimension = window.matchMedia("(max-width: 480px)")
 function openNav(dimension) {
   if (dimension.matches) { // If media query matches
     document.getElementById("mySidepanel").style.width = "100%";
+    document.getElementById("mySidepanel").style.height = "100%";
   } else {
     document.getElementById("mySidepanel").style.width = "350px";
   }
