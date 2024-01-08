@@ -68,24 +68,18 @@ var navbar = document.getElementById("navbar-sticky");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
-function openNav() {
-  document.getElementById("mySidepanel").style.width = "350px";
+var dimension = window.matchMedia("(max-width: 480px)")
+
+function openNav(dimension) {
+  if (dimension.matches) { // If media query matches
+    document.getElementById("mySidepanel").style.width = "100%";
+  } else {
+    document.getElementById("mySidepanel").style.width = "350px";
+  }
 }
 
 function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
-}
-
-// Create a MediaQueryList object
-var dimension = window.matchMedia("(max-width: 480px)")
-
-function sidepanelPhone(dimension) {
-  if (x.matches) { // If media query matches
-    document.getElementById("mySidepanel").style.width = "480px";
-    document.getElementById("mySidepanel").style.height = "800px";
-  } else {
-    document.getElementById("mySidepanel").style.width = "350px";
-  }
 }
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
