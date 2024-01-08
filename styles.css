@@ -271,6 +271,15 @@ div.language li a button:hover {
 mål med utseende. Webbplatsen  https://codepen.io/isaccobosio/details/PoPOVRB användes.
 Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds med en annan metod. */
 
+.nav-wrapper {
+    top: 0;
+}
+
+.navlogo {
+    height: 4em;
+    width: 8em;
+}
+
 .sidepanel  {
     width: 0;
     position: fixed;
@@ -281,13 +290,12 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
     background-color: var(--color-secondary);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 70px;
 }
   
 .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--color-tenth);
     display: block;
     transition: 0.3s;
@@ -329,12 +337,12 @@ Hamburgarmenyn och checkboxen har ignorerats eftersom vår hamburgare har byggds
 }
 
 .search_wrap{
-	width: 235px;
+	width: 240px;
 }
 
 .search_wrap .search_box{
 	position: relative;
-	width: 235px;
+	width: 240px;
 	height: 45px;
 }
 
